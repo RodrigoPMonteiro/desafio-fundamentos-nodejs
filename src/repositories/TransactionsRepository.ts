@@ -1,6 +1,13 @@
 import Transaction from '../models/Transaction';
 
-interface Balance {
+/*
+  * Conceito de Repositório:
+    - Ponte entre a aplicação e o banco de dados
+    - Isola a forma com que lidamos com dados
+    - Métodos comuns para Listar, Criar, Editar e Apagar dados
+*/
+
+interface BalanceDTO {
   income: number;
   outcome: number;
   total: number;
@@ -25,8 +32,8 @@ class TransactionsRepository {
   }
 
   // ESSA FUNCAO TEM QUE SOMAR OS TOTAIS - A PARTE DE VALIDACAO É OUTRA
-  public getBalance(): Balance {
-    const balance: Balance = {
+  public getBalance(): BalanceDTO {
+    const balance: BalanceDTO = {
       income: 0,
       outcome: 0,
       total: 0,

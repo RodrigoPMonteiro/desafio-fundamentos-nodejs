@@ -1,6 +1,19 @@
 import TransactionsRepository from '../repositories/TransactionsRepository';
 import Transaction from '../models/Transaction';
 
+/*
+  * Conceito de Service:
+    - Abstrair Regras de Negocio das Rotas!
+    - Tornar o código mais reutilizável
+    - Deixar as rotas reponsáveis somente por:
+      * Receber requisições
+      * Repassar os dados a outro arquivo
+      * Devolver uma resposta
+    - Tem que ter um nome auto-descritivo : CreateTransactionService
+    - Possuir apenas 1 método execute();
+    - Várias rotas ou arquivos podem usar o mesmo serviço!!!
+*/
+
 interface RequestDTO {
   title: string;
   value: number;
