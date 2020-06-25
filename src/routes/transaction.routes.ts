@@ -21,8 +21,8 @@ transactionRouter.get('/', (request, response) => {
     // TODO
     const transactions = transactionsRepository.all();
     // Atencao aqui. Tem que "juntar" o repositório e o "balance"
-    const balanceReturned = transactionsRepository.getBalance();
-    return response.json({ transactions, balanceReturned });
+    const balance = transactionsRepository.getBalance();
+    return response.json({ transactions, balance });
   } catch (err) {
     return response.status(400).json({ error: err.message });
   }

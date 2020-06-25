@@ -34,7 +34,9 @@ class CreateTransactionService {
         this.transactionsRepository.getBalance().total - value;
 
       if (balancePreview < 0) {
-        throw Error('Cannot add transaction. The balance will be negative. ');
+        throw Error(
+          'Não é possível realizar a transação. O saldo atual é menor que o valor solicitado para resgate. ',
+        );
       }
     }
     // FALTA CRIAR LÓGICA PARA execucao da getbalance
