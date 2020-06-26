@@ -111,7 +111,7 @@ Esse desafio foi entregue a partir da plataforma Skylab através do envio o link
 
 ## Solução do desafio
 
-Após implementar todas as rotas e validações corretamente, a contagem de "passed" será igual a 9, conforme imagem abaixo:
+Após implementar todas as rotas e validações corretamente, a contagem de "passed" será igual a 3, conforme imagem abaixo:
 
 <p align="center">
   <img height="150" width="500" src="./src/assets/test_approved.png">
