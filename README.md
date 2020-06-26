@@ -111,11 +111,11 @@ Esse desafio foi entregue a partir da plataforma Skylab através do envio o link
 
 ## Solução do desafio
 
-Foi gerado um vídeo explicando o passo a passo para cumprir com todos os requisitos da aplicação:
+Após implementar todas as rotas e validações corretamente, a contagem de "passed" será igual a 9, conforme imagem abaixo:
 
-<a href="https://youtu.be/FYsFvjM6AJM" target="_blank" align="center">
-  <img src="./assets/challenge-05-thumb.png">
-</a>
+<p align="center">
+  <img height="150" width="500" src="./src/assets/test_approved.png">
+</p>
 
 ## :memo: Licença
 
